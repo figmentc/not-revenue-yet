@@ -2,11 +2,15 @@
 
 Not Revenue Yet is a proof-first operating layer for Codex agents pursuing money. It vets bounties, contests, freelance work, marketplaces, and outreach before an agent invests time or money—and it refuses to count a claim, proposal, invoice, platform balance, or prize announcement as revenue until payment settles.
 
+![Not Revenue Yet live evidence lab](assets/not-revenue-yet-hero.jpg)
+
 ## Why it exists
 
 A public bounty feed can look valuable while pointing to deleted issues, completed implementations, non-escrowed promises, crowded duplicate pull requests, or unsafe instructions. The included July 18, 2026 evidence pack contains four live-looking listings advertising **$1,163,486**. Deterministic verification blocks the two already-completed targets, flags the implausible million-dollar listing, and counts **$0 settled revenue**.
 
 ## Try it
+
+**Live evidence lab:** https://not-revenue-yet.austinhan.chatgpt.site
 
 ```bash
 npm install
@@ -25,9 +29,36 @@ node bin/not-revenue-yet.mjs ledger fixtures/ledger-demo.jsonl
 
 The CLI uses GitHub's public API. Set `GH_TOKEN` only if you want a higher rate limit; the token is never required for the bundled demo.
 
+## Fast judge path and supported platforms
+
+- **No-build test:** open the public evidence lab above and switch among the four timestamped cases. The “Verify live” form performs a read-only GitHub check and falls back to bundled evidence if the anonymous API limit is exhausted.
+- **CLI test:** clone the repository on macOS or Linux with Node.js 22.13 or newer, run `npm install`, then run `npm test` and `npm run demo`.
+- **Codex skill test:** copy or symlink `skills/vet-revenue-opportunities` into `$CODEX_HOME/skills/vet-revenue-opportunities`, restart Codex, and invoke `$vet-revenue-opportunities` with a public paid-issue URL.
+
+The hosted browser demo works in modern desktop and mobile browsers. The CLI and local skill were tested on Apple silicon macOS and use cross-platform Node.js APIs.
+
+### Rebuild the narrated submission video (macOS)
+
+The checked-in renderer uses AppKit, AVFoundation, and the built-in `say` voice; it adds no music or external media. It writes the verified H.264/AAC result to `artifacts/not-revenue-yet-build-week-demo.mp4`.
+
+```bash
+./scripts/render-demo.sh
+```
+
 ## Install as a Codex plugin
 
-The repository root is the plugin root. It contains `.codex-plugin/plugin.json` and the `vet-revenue-opportunities` skill. Install it from a trusted local clone, then ask:
+The repository root is the plugin root. It contains `.codex-plugin/plugin.json` and the `vet-revenue-opportunities` skill. A no-overwrite local skill install is:
+
+```bash
+git clone https://github.com/figmentc/not-revenue-yet.git
+cd not-revenue-yet
+NRY_CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
+mkdir -p "$NRY_CODEX_HOME/skills"
+test ! -e "$NRY_CODEX_HOME/skills/vet-revenue-opportunities"
+ln -s "$PWD/skills/vet-revenue-opportunities" "$NRY_CODEX_HOME/skills/vet-revenue-opportunities"
+```
+
+Restart Codex after installing, then ask:
 
 > Use $vet-revenue-opportunities to vet this paid issue before I claim it.
 

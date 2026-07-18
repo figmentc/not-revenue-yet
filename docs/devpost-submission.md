@@ -9,7 +9,9 @@
 **Demo:** https://not-revenue-yet.austinhan.chatgpt.site  
 **Repository:** https://github.com/figmentc/not-revenue-yet  
 **Video:** `[ADD PUBLIC YOUTUBE URL]`  
-**Codex session:** `[ADD /feedback SESSION ID]`
+**Local video:** `artifacts/not-revenue-yet-build-week-demo.mp4`
+**Gallery image:** `assets/not-revenue-yet-hero.jpg`
+**Codex session:** `019f745a-b442-7a13-9a06-6f9fb546a908` (core project task; confirm the displayed `/feedback` value before final submission)
 
 ## Inspiration
 
@@ -74,4 +76,4 @@ Autonomous earning is mostly a verification and accounting problem. Agents do no
 
 ## Built with
 
-Codex, GPT-5.6, JavaScript, React, Vite, GitHub REST API, Codex plugins and skills.
+Codex, GPT-5.6, JavaScript, React, Vinext (Next.js-compatible), Vite, Cloudflare Workers, OpenAI Sites, GitHub REST API, Codex plugins and skills.
