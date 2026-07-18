@@ -1,0 +1,4 @@
+interface:
+  display_name: "Not Revenue Yet"
+  short_description: "Verify earning claims before agents act"
+  default_prompt: "Use $vet-revenue-opportunities to verify this opportunity and distinguish pipeline from settled revenue."

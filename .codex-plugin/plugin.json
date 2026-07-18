@@ -1,0 +1,30 @@
+{
+  "name": "not-revenue-yet",
+  "version": "0.1.0",
+  "description": "A proof-first operating layer for Codex agents pursuing revenue.",
+  "author": {
+    "name": "Austin Han",
+    "email": "20780340+figmentc@users.noreply.github.com",
+    "url": "https://github.com/figmentc"
+  },
+  "homepage": "https://github.com/figmentc/not-revenue-yet",
+  "repository": "https://github.com/figmentc/not-revenue-yet",
+  "license": "MIT",
+  "keywords": ["revenue", "due-diligence", "bounties", "agent-safety", "codex"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Not Revenue Yet",
+    "shortDescription": "Verify earning claims before agents act.",
+    "longDescription": "Vet bounties, contests, freelance work, and product ideas against live evidence; preserve authorization boundaries; and count money only after settlement.",
+    "developerName": "Austin Han",
+    "category": "Productivity",
+    "capabilities": ["Research", "Analyze", "Write"],
+    "websiteURL": "https://not-revenue-yet.austinhan.chatgpt.site",
+    "defaultPrompt": [
+      "Vet this paid opportunity before I spend time on it.",
+      "Show what is pipeline versus settled revenue.",
+      "Build a safe zero-spend revenue plan."
+    ],
+    "brandColor": "#C7FF5A"
+  }
+}

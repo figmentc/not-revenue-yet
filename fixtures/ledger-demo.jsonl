@@ -1,0 +1,3 @@
+{"eventId":"evt-1","opportunityKey":"contest:demo","kind":"promised","netMinor":1500000,"currency":"USD","idempotencyKey":"contest-promise"}
+{"eventId":"evt-2","opportunityKey":"contest:demo","kind":"approved","netMinor":1500000,"currency":"USD","idempotencyKey":"contest-approved"}
+{"eventId":"evt-3","opportunityKey":"contest:demo","kind":"paid-pending","netMinor":1500000,"currency":"USD","idempotencyKey":"contest-pending"}
