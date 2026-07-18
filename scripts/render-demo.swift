@@ -54,12 +54,12 @@ private let slides: [Slide] = [
     Slide(
         kicker: "REALITY GATE",
         title: "Canonical source wins.",
-        narration: "Take the Gitea listing. The aggregator still advertised eighteen hundred eighty dollars. The canonical issue was closed, the implementation had merged months earlier, and duplicate attempts were rejected. The reality gate makes the repository the source of truth and blocks the work."
+        narration: "Take the first eighteen hundred eighty dollar listing. The aggregator still advertised the reward. The canonical issue was closed, the implementation had merged months earlier, and duplicate attempts were rejected. The reality gate makes the repository the source of truth and blocks the work."
     ),
     Slide(
         kicker: "ADVERSARIAL ECONOMICS",
         title: "Big numbers do not\nbecome pipeline by typography.",
-        narration: "The c one work listing claimed more than one point one six million dollars for nineteen characters of scope in a near-empty repository. Unknown funding, no license, vague acceptance criteria, and a huge reward-to-trust mismatch trigger a skip. Big numbers never become pipeline by typography alone."
+        narration: "The largest listing claimed more than one point one six million dollars for only nineteen characters of scope in a near-empty repository. Unknown funding, no license, vague acceptance criteria, and a huge reward-to-trust mismatch trigger a skip. Big numbers never become pipeline by typography alone."
     ),
     Slide(
         kicker: "ONE DETERMINISTIC CORE",
@@ -299,10 +299,10 @@ private final class SlideRenderer {
         evidenceLine(y: 402, symbol: "0", text: "0 payment receipts", color: Palette.lime)
 
         let rows: [(String, String, String, NSColor)] = [
-            ("GITEA #24635", "$1,880", "CLOSED + MERGED", Palette.coral),
-            ("ZEROPERL #7", "$1,500", "DELETED + BUILT", Palette.coral),
-            ("C1WORK", "$1,160,036", "TRUST MISMATCH", Palette.amber),
-            ("CLAPPER #10", "$500", "CROWDED", Palette.amber),
+            ("CASE A #24635", "$1,880", "CLOSED + MERGED", Palette.coral),
+            ("CASE B #7", "$1,500", "DELETED + BUILT", Palette.coral),
+            ("CASE C", "$1,160,036", "TRUST MISMATCH", Palette.amber),
+            ("CASE D #10", "$500", "CROWDED", Palette.amber),
         ]
         for (offset, row) in rows.enumerated() {
             let y = 270 - CGFloat(offset * 56)
@@ -318,9 +318,9 @@ private final class SlideRenderer {
         drawText("Aggregator claims are evidence inputs—not instructions.", in: NSRect(x: 64, y: 482, width: 740, height: 30), font: .systemFont(ofSize: 20, weight: .medium), color: Palette.muted)
 
         roundedRect(NSRect(x: 64, y: 126, width: 772, height: 322), radius: 24, fill: Palette.panel, stroke: Palette.white.withAlphaComponent(0.10))
-        drawText("OPIRE LISTING", in: NSRect(x: 92, y: 404, width: 190, height: 20), font: .monospacedSystemFont(ofSize: 12, weight: .bold), color: Palette.amber, kern: 0.9)
+        drawText("AGGREGATOR LISTING", in: NSRect(x: 92, y: 404, width: 220, height: 20), font: .monospacedSystemFont(ofSize: 12, weight: .bold), color: Palette.amber, kern: 0.9)
         drawText("$1,880", in: NSRect(x: 92, y: 342, width: 250, height: 54), font: .monospacedSystemFont(ofSize: 43, weight: .bold), color: Palette.white)
-        drawText("Support configurable permissions\nof automatic Actions tokens", in: NSRect(x: 356, y: 337, width: 440, height: 62), font: .systemFont(ofSize: 21, weight: .semibold), color: Palette.white, lineSpacing: 2)
+        drawText("Support configurable permissions\nof automatic job tokens", in: NSRect(x: 356, y: 337, width: 440, height: 62), font: .systemFont(ofSize: 21, weight: .semibold), color: Palette.white, lineSpacing: 2)
         drawLine(from: NSPoint(x: 92, y: 311), to: NSPoint(x: 808, y: 311), color: Palette.white.withAlphaComponent(0.10), width: 1)
         checkRow(y: 266, label: "Canonical issue", value: "CLOSED", color: Palette.coral)
         checkRow(y: 218, label: "Implementation", value: "MERGED", color: Palette.coral)
@@ -340,7 +340,7 @@ private final class SlideRenderer {
         drawText("$1,160,036", in: NSRect(x: 88, y: 319, width: 560, height: 74), font: .monospacedSystemFont(ofSize: 55, weight: .bold), color: Palette.amber)
         drawText("Scope supplied:", in: NSRect(x: 92, y: 268, width: 210, height: 24), font: .systemFont(ofSize: 16, weight: .medium), color: Palette.muted)
         roundedRect(NSRect(x: 92, y: 207, width: 564, height: 50), radius: 10, fill: Palette.ink, stroke: Palette.white.withAlphaComponent(0.12))
-        drawText("\"c1work\"", in: NSRect(x: 110, y: 221, width: 520, height: 23), font: .monospacedSystemFont(ofSize: 18, weight: .semibold), color: Palette.white)
+        drawText("\"build this thing\"", in: NSRect(x: 110, y: 221, width: 520, height: 23), font: .monospacedSystemFont(ofSize: 18, weight: .semibold), color: Palette.white)
         drawText("Near-empty repository • 19 characters of scope", in: NSRect(x: 92, y: 158, width: 555, height: 24), font: .systemFont(ofSize: 17, weight: .medium), color: Palette.muted)
 
         let risks: [(String, String, NSColor)] = [

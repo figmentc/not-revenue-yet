@@ -5,7 +5,7 @@
 - Video: `artifacts/not-revenue-yet-build-week-demo.mp4`
 - Thumbnail: `assets/youtube-thumbnail.jpg`
 - Target visibility: **Public**
-- Video SHA-256: `f9523de2bd75ee320c3be3e4254f28690c822672bdd33ba769898a05fded30dd`
+- Video SHA-256: `df1152daec577d1ecf87f73092d2fbc80a25eae0b9e303cc020cb6f4ebbdf0ec`
 
 ## Title
 

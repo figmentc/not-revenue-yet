@@ -15,7 +15,7 @@
 - [x] Production QA: anonymous load, case switching, and live GitHub verification
 - [x] Exact 2:20 narration and interaction script
 - [x] Record the core Codex task ID from the project runtime
-- [x] Render and verify the 2:23 H.264/AAC demo with audio
+- [x] Render and verify the 2:24 H.264/AAC demo with audio
 - [x] Production hero screenshot for the Devpost gallery
 - [x] Prepare exact YouTube title, description, thumbnail, and public-visibility setting
 
